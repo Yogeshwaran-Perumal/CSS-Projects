@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <style>
+        body{
+            margin: 100px  300px;
+            box-sizing: border-box;
+            background-color:blue;
+            
+        }
+        h1{
+            /* background-color:red; */
+            margin: 0;
+            width: 100%;
+        }
+        h1:hover{
+            color: chartreuse;
+
+        }
+        .a{
+            color: red;
+        }
+        #k{
+            margin: 0%;
+            text-align: center;
+            background-color: red;
+        }
+        #inp{
+            text-align: center;
+            box-sizing: border-box;
+            border: 2px solid;
+            border-color: white;
+            height:30px;
+            width:40%;
+            justify-content: space-between;
+        }
+        #ul{
+            margin: 0px;
+            background-color: rgb(129, 206, 216);
+            box-sizing: border-box;
+            border: 1px solid;
+            padding: 0px;
+            font-size:50px;
+        }
+        #ul li{
+            box-sizing: border-box;
+            border: 1px solid;
+            border-color: white;
+            padding: 0px;
+            font-size:40px;
+            display: flex;
+            justify-content: space-between;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        li:hover{
+            background-color: rgb(87, 55, 92);
+
+        }
+        button{
+            height:30px;
+            width: 50px;
+        }
+        button:hover{
+            background-color: rgb(233, 198, 205);
+        }
+        .fg{
+            padding: 30px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="k">
+    <h1>TO DO LIST</h1>
+    <input type="text" name="" id="inp" placeholder="Title">
+    <button onclick="ab()">Add</button>
+    </div>
+    <div id="g">
+    <ul id="ul" style="list-style-type:none">
+        <li>Wakeup Early Morning</li>
+        <li>Do Gym Work Out</li>
+        <li>Get Protein Food</li>
+        <li>Do Practice in Java Script</li>
+        <li>Do Read Tech Update</li>
+    </ul>
+    </div>
+</body>
+<script>
+    var x=document.getElementsByTagName('li')
+    for(i=0;i<x.length;i++){
+        var bt=document.createElement('button')
+        bt.className="fg"
+     let  con=document.createTextNode('x')
+        bt.appendChild(con)
+        bt.className='a'
+        x[i].appendChild(bt)
+    }
+    var cn=document.getElementsByClassName('a')
+    for(j=0;j<cn.length;j++){
+        cn[j].onclick=function(){
+            var zz=this.parentElement;
+            zz.style.display='none'
+
+        }
+    }
+    function ab(){
+        z=document.getElementById('inp').value
+        
+        txt=document.createTextNode(z)
+        
+        var bt=document.createElement('button')
+    
+        con=document.createTextNode('x')
+        bt.appendChild(con)
+        bt.className='a' 
+         
+        var li=document.createElement('li')
+        li.appendChild(txt)
+        li.appendChild(bt)
+        document.getElementById('ul').appendChild(li)
+        document.getElementById('inp').value=''
+
+    
+        var cn=document.getElementsByClassName('a')
+    for(j=0;j<cn.length;j++){
+        cn[j].onclick=function(){
+            var zz=this.parentElement;
+            zz.style.display='none'
+
+        }
+    }
+}
+</script>
+</html>
