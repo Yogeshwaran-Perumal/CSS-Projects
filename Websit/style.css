@@ -1,0 +1,141 @@
+body{
+    margin: 0px;
+    background-color: #212c40; 
+}
+section{
+    height: 750px;
+}
+.q1{
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    color: white;
+    letter-spacing: 3px;
+}
+.q1 button{
+    border: 1px solid;
+    border-radius: 40px;
+    font-size: 11px;
+    padding: 6px 20px;
+    color: inherit;
+    background-color: #212c40; 
+    letter-spacing: 1px;
+}
+    
+
+#a1{
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content:space-between;
+
+}
+
+#s1,#s2,#s3{
+    width:410px;
+    
+}
+#s1,#s2,#s3:hover{
+    cursor: pointer;
+}
+#s3 button:hover{
+    cursor: pointer;
+    
+}
+
+#s1 img{
+    width:410px;
+    height:290px;
+   
+}
+#s2 img{
+    width:410px;
+    height:290px;
+   
+}
+#s3 img{
+    width:410px;
+    height:290px;
+}
+#s1 p{
+    color: rgba(245, 243, 243, 0.596);
+    font-size:13px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    letter-spacing: 1px;
+
+}
+#s1 h3{
+    font-size: 26px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+
+}
+#s1 button{
+    padding: 13px 40px;
+    border-radius: 50px;
+    font-size: 12px;
+    background-color: white;
+    border: none;
+}
+#s2 p{
+    color: rgba(245, 243, 243, 0.596);
+    font-size:13px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    letter-spacing: 1px;
+
+}
+#s2 h3{
+    font-size: 26px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+
+}
+#s2 button{
+    padding: 13px 40px;
+    border-radius: 50px;
+    font-size: 12px;
+    background-color: white;
+    border: none;
+}
+#s3 p{
+    color: rgba(245, 243, 243, 0.596);
+    font-size:13px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    letter-spacing: 1px;
+
+}
+#s3 h3{
+    font-size: 26px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+
+}
+#s3 button{
+    padding: 13px 40px;
+    border-radius: 50px;
+    font-size: 12px;
+    background-color: white;
+    border: none;
+}
+@media screen and (max-width: 400px){
+            #s1{
+                width: 30%;
+            }
+            #s2{
+                width: 30%;
+            }
+            #s3{
+                width: 30%;
+            }
+            
+}
+
+
+    
+
+
