@@ -1,0 +1,130 @@
+.container {
+    width: 100%;
+}
+#er{
+    position: sticky;
+}
+
+.i {
+    height: 500px;
+}
+#a{
+    margin-top: 50px;
+}
+#a h5{
+    padding-top: 30px;
+}
+#b{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 10px;
+    box-sizing: border-box;
+    border: 2px solid;
+    background-color: antiquewhite;
+}
+#b1{
+    padding-right: 150px;
+    padding-left: 150px;
+    display: flex;
+    background-color: rgb(249, 235, 250);
+    justify-content: space-between;
+    align-items: center;
+
+    
+    
+
+   
+}
+#b1 img{
+    border-radius: 50%;
+    
+}
+#b1 div{
+    margin: 0px 20px;
+    padding-top: 50px;
+    padding-bottom: 16px;
+}
+#b1 p{
+    font-size: 13px;
+    text-align: center;
+    padding-top: 22px;
+    letter-spacing: 2px;
+
+}
+.s1{
+    margin-bottom: 0;
+}
+.d1{
+    text-align: center;
+    margin-bottom: 35px;
+}
+.p{
+    width: 300px;
+    height: 200px;
+}
+.y{
+    margin-left: 0;
+    margin-right: 0;
+}
+#e1 h4{
+    text-align: center;
+}
+#e1 p{
+    text-align: center;
+    padding:20px 200px;
+}
+.h{
+    height: 200px;
+}
+.g{
+    margin: 0px 200px;
+}
+#r1{
+    padding-left: 200px;
+}
+.z{
+    margin: 30px 100px;
+    
+}
+
+#fo{
+    /* width: 100%; */
+    padding: 100px;
+    /* margin: 100px; */
+    width: 100%;
+
+
+}
+#fo h4{
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}
+input{
+    border: 2px solid;
+    border-radius: 10%;
+    width: 400px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    margin: 10px 0px;
+    
+}
+button{
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 5px ;
+    text-decoration:red;
+    background-color: blue;
+    color: white;
+}
+#j1{
+    display: flex;
+    background-color: rgb(212, 71, 189);
+}
+#j1 img{
+    margin: 100px 50px;
+    
+}
+
