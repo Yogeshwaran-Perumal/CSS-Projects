@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="prost.css">
+</head>
+
+<body>
+    <header >
+        <div class="header-content">
+            <div class="logo">
+                <img src="img-1/banner-logo.png" alt="">
+            </div>
+            <ul id="nav-linkes">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">COURSES</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <div id="burger" onclick="ab()">
+                <i class="fa fa-backward" style="font-size:36px;"></i>
+
+            </div>
+        </div>
+    </header>
+</body>
+<script>
+    $(document).ready(function(){
+        $('burger').click(function(){
+            $('nav-linkes').show()
+        })
+    })
+
+</script>
+
+</html>
