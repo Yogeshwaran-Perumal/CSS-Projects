@@ -1,0 +1,478 @@
+
+
+:root {
+    --coler1: #e52165;
+
+
+    --coler2: #0d1137;
+}
+
+
+::selection {
+    background-color: rgb(15, 14, 14);
+    color: var(--coler1);
+}
+body{
+    cursor: pointer;
+}
+
+
+#nav{
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+#nav {
+    background-color: rgb(168, 29, 29);
+    display: flex;
+    width: 100%;
+    height: 50px;
+    
+}
+
+#nav img {
+    padding-left: 35px;
+}
+
+ul li {
+
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px 10px;
+    font-size: 12px;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+li i {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+}
+
+.a1 img {
+    background-color: rgb(168, 29, 29);
+    width: 17px;
+    height: 17px;
+    float: right;
+    align-items: center;
+    padding-top: 15px;
+    padding-left: 15px;
+    cursor: pointer;
+
+}
+
+#nav li::after {
+    content: '';
+    display: block;
+    background-color: white;
+    height: 2px;
+    width: 0%;
+    transition: width 300ms;
+    transition: transform 300ms;
+    transform: scaleX(0);
+}
+
+#nav li:hover::after {
+
+    width: 100%;
+    transform: scaleX(1);
+}
+
+#index{
+    background-color: #242323;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+}
+#index h1{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.card img{
+    height: 200px;
+}
+.card h5{
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+
+}
+.card p{
+    font-size: 12px;
+    font-family: 'Oswald', sans-serif;
+
+}
+.card-body{
+    background-color:black;
+    color: white;
+}
+
+#bike{
+    width: 100%;
+    height:1000px;
+    background-color: #242323;
+    margin-top: 0px;
+
+  
+}
+.bik{
+    background-image: url('img-1/model-bg.svg');
+    background-size: cover;
+}
+
+#bike h1{
+    margin-top: 0px;
+    padding-top: 80px;
+    text-align: center;
+    color:grey;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 30px;
+    
+}
+.rt{
+    padding-left:20px ;
+    padding-right: 20px;
+}
+
+
+
+
+
+.bik p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+    font-size: 13px;
+    color: gray;
+}
+
+ .ime1 img{
+    width: 200px;
+    height: 150px;
+    padding: 10px 50px;
+    transition: 0.8s;
+    display: inline-block;
+    
+
+}
+ .ime2 img{
+    width: 200px;
+    height: 150px;
+    padding: 10px 50px;
+    transition: 0.8s;
+    display: inline-block;
+
+}
+ .ime3 img{
+    width: 200px;
+    height: 150px;
+    padding: 10px 50px;
+    transition: 0.8s;
+    display: inline-block;
+
+}
+ .ime4 img{
+    width: 200px;
+    height: 150px;
+    padding: 10px 50px;
+    transition: 0.10s;
+    display: inline-block;
+
+}
+.ime1 :hover{
+    transform: scale(1.2);
+    
+}
+.ime2 :hover{
+    transform: scale(1.2);
+    
+}
+.ime3 :hover{
+    transform: scale(1.2);
+    
+}
+.ime4 :hover{
+    transform: scale(1.2);
+    
+}
+
+.ime1,.ime2,.ime3,.ime4{
+    overflow:hidden;
+}
+
+.q12 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  
+
+}
+
+.q13 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.rt1 img {
+    height: 50px;
+    width: 50px;
+    background-color: inherit;
+    padding-left: 130px;
+    padding-right: 122px;
+    padding-top: 10px;
+    margin-top: 0px;
+    
+
+}
+
+.rt2 img {
+    height: 40px;
+    width: 70px;
+    background-color: #242323;
+    padding-left: 120px;
+    padding-right: 113px;
+    padding-top: 10px;
+    background-color: inherit;
+   
+
+}
+
+.rt3 img {
+    height: 50px;
+    width: 70px;
+    background-color: #242323;
+    padding-left: 120px;
+    padding-right: 113px;
+    padding-top: 10px;
+    
+
+
+}
+
+.rt4 img {
+    height: 50px;
+    width: 80px;
+    background-color: #242323;
+    padding-left: 115px;
+    padding-right: 113px;
+    padding-top: 10px;
+ 
+
+}
+
+.q1 {
+    margin-left: 100px;
+    margin-right: 40px;
+    
+
+
+}
+
+.q2 {
+    margin-left: 100px;
+    margin-right: 30px;
+
+}
+
+.q3 {
+    margin-left: 100px;
+    margin-right: 30px;
+
+
+
+}
+
+.q4 {
+    margin-left: 100px;
+    margin-right: 30px;
+    
+
+}
+
+.q1 p {
+    text-align: center;
+    font-size: 12px;
+    padding: 0px 10px;
+    color: gray;
+}
+
+.q2 p {
+    text-align: center;
+    font-size: 12px;
+    /* padding: 0px 10px; */
+    color: gray;
+
+
+}
+
+.q3 p {
+    text-align: center;
+    font-size: 12px;
+    padding: 0px 10px;
+    color: gray;
+
+}
+
+.q4 p {
+    text-align: center;
+    font-size: 12px;
+    padding: 0px 10px;
+    color: gray;
+
+
+}
+
+
+
+#in2{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    background-color: #9f785c;
+    cursor: pointer;
+
+}
+#end1{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    padding-top: 30px;
+    padding-left: 90px;
+    padding-right: 30px;
+    font-family: 'Oswald', sans-serif;
+
+
+}
+
+.en1{
+    font-size: 13px;
+    text-align: left;
+    padding-right: 70px;
+}
+.en2{
+    font-size: 12px;
+    text-align: left;
+    padding-right:30px;
+}
+.en3{
+    font-size: 12px;
+    text-align: left;
+    padding-right: 20px;
+}
+.en2 h4,h5{
+    font-size: 14px;
+}
+.en3 h4{
+    font-size: 14px;
+
+}
+.en2 p{
+    font-size: 10px
+}
+.en3 p{
+    font-size: 10px
+}
+#end2{
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 120px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 45px;
+    padding-top: 50px;
+    background-color: black;
+    /* box-shadow: #e52165;
+    box-sizing: border-box; */
+}
+#end2 h2{
+    font-size: 13px;
+    color: #9f785c;
+
+}
+#end2 p{
+    font-size: 10px;
+    color: #9f785c;
+}
+#end2 input{
+    margin-top: 30px;
+    background-color: inherit;
+    border: none;
+    outline: 0;
+    color: white;   
+}
+#end2 i{
+    color: #9f785c;
+    padding-left: 5px;
+}
+.en1 p:hover{
+    color: white;
+}
+.en2 p:hover{
+    color: white;
+}
+.en3 p:hover{
+    color: white;
+}
+
+#end2:hover{
+    box-shadow: 10px 10px 5px  rgb(168, 29, 29);
+
+}
+#end2 h3{
+    color: #9f785c;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 20px;
+}
+#end2 img{
+    width: 200px;
+    padding-left: 10px;
+
+}
+
+/* @media screen and (min-width: 600px) {
+    body {
+      background-color: rgb(3, 49, 3);
+    }  
+  } */
+  
+  /* @media screen and (min-width: 900px) {
+    body {
+      background-color: rgb(15, 15, 204);
+    }
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
