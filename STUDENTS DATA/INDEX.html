@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main {
+            box-sizing: border-box;
+            border: 2px solid;
+            margin: 20px 250px;
+            text-align: left;
+            padding: 10px;
+        }
+        label{
+            background-color: yellow;
+        }
+        tbody{
+            background-color: rgb(113, 189, 106);
+        }
+
+        table {
+            border: 1px solid;
+            width: 100%;
+        }
+        button{
+            background-color: red;
+        }
+
+        table td,
+        table th {
+            border: 1px solid;
+            padding: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 25px;
+        }
+        h2 {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 25px;
+        }
+
+        .text {
+            font-size: 10px;
+        }
+        thead{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h1>STUDENT FORM</h1>
+        <table>
+            <tr>
+                <td><label for="name">NAME</label></td>
+                <td><input type="text" id="name" autocomplete="given-name" required></td>
+            </tr>
+            <tr>
+                <td><label for="age">AGE</label></td>
+                <td><input type="number" id="age" autocomplete="additional-name" required></td>
+            </tr>
+            <tr>
+                <td><label>GENDER</label></td>
+                <td>
+                    <input type="radio" value="Male" name="gender" id="male">
+                    <label for="male">MALE</label>
+                    <input type="radio" value="Female" name="gender" id="female">
+                    <label for="female">FEMALE</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="course">COURSE</label></td>
+                <td>
+                    <select name="course" id="course">
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="jQuery">JQUERY</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="mail">EMAIL</label></td>
+                <td><input type="email" id="mail" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="add()">SUBMIT</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="studentTable">
+        <h2>STUDENT LIST</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>AGE</th>
+                    <th>GENDER</th>
+                    <th>COURSE</th>
+                    <th>EMAIL</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody id="studentData">
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function add() {
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            var gender = document.querySelector('input[name="gender"]:checked').value;
+            var course = document.getElementById("course").value;
+            var email = document.getElementById("mail").value;
+
+            var tableRef = document.getElementById("studentData");
+
+            var newRow = tableRef.insertRow();
+
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+            var cell3 = newRow.insertCell(2);
+            var cell4 = newRow.insertCell(3);
+            var cell5 = newRow.insertCell(4);
+            var cell6 = newRow.insertCell(5);
+
+            cell1.textContent = name;
+            cell2.textContent = age;
+            cell3.textContent = gender;
+            cell4.textContent = course;
+            cell5.textContent = email;
+            cell6.innerHTML = '<button onclick="deleteRow(this)">Delete</button>';
+        }
+
+        function deleteRow(row) {
+            var i = row.parentNode.parentNode.rowIndex;
+            var de=document.getElementById("studentData");
+                de.deleteRow(i);
+        }
+    </script>
+</body>
+
+</html>
